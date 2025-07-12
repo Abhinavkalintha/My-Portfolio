@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!---------------------header------------------------>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="collection/logo.png.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Embedded Software Engineer</p>
+            <h1>Hi, I'm <span>Abhinav</span><br>From India</h1>
+        </div>
+    </div>
+</div>
+<!--------------------about------------------------>
+<div id="about">
+    <div class="container"> 
+        <div class="row">
+            <div class="about-col-1">
+                <img src="collection/user.png.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate and skilled Full-Stack Developer with expertise in Java, Django, and MongoDB,
+                     along with proficiency in Python, C, HTML, CSS, and JavaScript. 
+                     I have a strong foundation in developing efficient and scalable solutions, with a keen interest in solving complex technical challenges.
+                      As a quick learner and adaptable team player, I am eager to apply my skills in real-world projects. Driven by innovation,
+                     I am committed to continuous learning and excited to contribute to impactful technology solutions.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java Full Stack</span><br>Advance level in Java Programming</li>
+                        <li><span>Python</span><br>Advance level in Python Programming</li>
+                        <li><span>SQL</span><br>Intermediate level in SQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2024 - Present</span><br>Embedded Systems Intern</li>
+                        <li><span>June 2023 - Aug 2023</span><br>IOT Intern</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Btech</span><br>2020-2024<br>Vasireddy Venkatadri Institute of Technology</li>
+                        <li><span>Intermediate</span><br>2018-2020<br>Narayana Junior College</li>
+                        <li><span>10th</span><br>2017-2018<br>Chanakya High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------services--------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-microchip"></i> 
+                <h2>Firmware Development</h2>
+                <p>I enjoy writing efficient and reliable low-level code that brings embedded systems to life.
+                   Using technologies like C, STM32 HAL, FreeRTOS, and peripheral drivers, I build real-time firmware that powers sensors, actuators, and communication protocols in embedded applications.</p>
+                   <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-plug"></i> 
+                <h2>Hardware-Software Integration</h2>
+                <p>I love connecting code with the physical world to create responsive and functional embedded devices.
+                   By integrating microcontrollers with sensors, displays, and modules via interfaces like I2C, SPI, UART, I ensure smooth interaction between software logic and hardware behavior.</p>
+                   <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-project-diagram"></i>
+                <h2>Embedded Systems Architecture</h2>
+                <p>I enjoy designing robust embedded systems with a clean, scalable, and efficient architecture.
+                    Leveraging concepts like task scheduling, memory management, and low-power modes, I structure applications for performance, modularity, and real-time operation using RTOS or bare-metal design.</p>
+                   <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Portfolio------------------->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="collection/agriculture ecommerce.png">
+                <div class="layer">
+                    <h3>Agri Link</h3>
+                    <p>Agri-Link is a full-stack app using IoT, AI, ML, and blockchain to enhance transparency and efficiency in the agricultural supply chain</p>
+                    <a href="https://github.com/maryflorance/Agri-Link/tree/main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/vrpic.png.png">
+                <div class="layer">
+                    <h3>Online Website</h3>
+                    <p>3D virtual environment for real-time product browsing and interactions</p>
+                    <a href="https://github.com/maryflorance/Virtual-try-on"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/iot.png.png">
+                <div class="layer">
+                    <h3>Device</h3>
+                    <p>IoT-based system to monitor temperature and moisture levels. The solution includes an alert system for real-time notifications</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/voice.jpg">
+                <div class="layer">
+                    <h3>Voice Assistant</h3>
+                    <p>This is a Python-based voice assistant that can perform tasks like telling the time, checking the weather, sending emails, and more</p>
+                    <a href="https://github.com/maryflorance/OasisInfobyte_Voice_Assistant"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/pass.png">
+                <div class="layer">
+                    <h3>Password Generator</h3>
+                    <p>This is a A Python-based advanced password generator with a graphical user interface (GUI) built using Tkinter.</p>
+                    <a href="https://github.com/maryflorance/OasisInfobyte_Random_Password_Generator/tree/main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/weather.jpg">
+                <div class="layer">
+                    <h3>Basic Weather App</h3>
+                    <p>This is a Python-based weather application that uses the OpenWeatherMap API and Tkinter for the GUI.</p>
+                    <a href="https://github.com/maryflorance/OasisInfobyte_Weather_app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/Banking application.png">
+                <div class="layer">
+                    <h3>Banking Application</h3>
+                    <p>This is a Java-Based Banking Application that can perform banking operations such as deposits, withdrawals, checking balances, and exiting the program</p>
+                    <a href="https://github.com/maryflorance/CodeAlpha_BankingApplication"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="collection/travel.png">
+                <div class="layer">
+                    <h3>Travel Itinerary Planner</h3>
+                    <p>A Java-based Travel Itinerary Planner that generates detailed plans with maps, weather updates, and budget calculations</p>
+                    <a href="https://github.com/maryflorance/CodeAlpha_TravelItineraryPlanner/tree/main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------------------Contact------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> abhinavkalintha00077@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9100758546</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abhinav-kalintha/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Abhinavkalintha"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="collection/My CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 Abhinav <i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwiIG9ZFJU2oX55FomjaAGVwr-5hC8fYsYQm8gZSQZK7BUuSRv856xdJafVFtmM32ja/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
